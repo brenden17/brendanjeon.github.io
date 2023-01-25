@@ -3,12 +3,13 @@ Tinaroo
 
 The `Tinaroo <https://rcc.uq.edu.au/tinaroo>` cluster is a major increase in capability for UQ. 
 
-### Request new acconut to RCC
-
+Request new acconut to RCC
+***************************
 Email to RCC to make new acconut
 
-### Set up conda
- 
+Set up conda
+*************
+
 .. highlight:: bash
    :linenothreshold: 1
 

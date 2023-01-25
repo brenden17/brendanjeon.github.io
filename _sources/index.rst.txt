@@ -1,4 +1,4 @@
-Welcome to Lumache's documentation!
+Welcome to Brendan's documentation!
 ===================================
 
 **Lumache** (/lu'make/) is a Python library for cooks and food lovers that
@@ -14,9 +14,8 @@ Facts database <https://world.openfoodfacts.org/>`_ and offers a *simple* and
 
    Tinaroo
    Data
-   about
+   About
    Template
-   prerequisites
 
 .. note::
 
