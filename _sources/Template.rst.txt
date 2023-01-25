@@ -1,0 +1,22 @@
+Template
+#####################
+
+https://lpn-doc-sphinx-primer.readthedocs.io/en/stable/concepts/heading.html
+
+> Title -- Number Signs
+> #####################
+>
+> Suptitle -- Asterisks
+> *********************
+> 
+> Section -- Equal Signs
+> ======================
+> 
+> Subsection -- Hyphens
+> ---------------------
+> 
+> Subsubsection -- Circumflex
+> ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 
+> Paragraph -- Double Quotes
+> """"""""""""""""""""""""""
