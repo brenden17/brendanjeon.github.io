@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Newbies'
+project = 'Brendan'
 copyright = '2023, Brendan Jeon'
 author = 'Brendan Jeon'
 

@@ -19,8 +19,8 @@ sphinx-build -b html docs/source/ docs/build/html
 ## edit && compile
 cd brendanjeon.github.io
 rsub docs/source/index.rst
-./clean.bat
-./html.bat
+./clean.bat #docs/make clean
+./html.bat #docs/make html
 ./update.bat
 
 ~~~
