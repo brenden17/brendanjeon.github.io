@@ -19,8 +19,8 @@ Go  to RCC to make a new acconut
 
 
 <p>Tinaroo does not appear on the QRIScompute request page, go <a href="https://services.qriscloud.org.au/services/request/new/151270360cb54d0783bffd482b4651d2">here</a>.</p>
-Set up conda
 
+Set up conda
 *************
 
 .. highlight:: bash
