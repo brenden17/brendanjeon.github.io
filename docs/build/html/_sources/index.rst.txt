@@ -7,15 +7,15 @@ Facts database <https://world.openfoodfacts.org/>`_ and offers a *simple* and
 *intuitive* API.
 
 
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    Progress
-   Tinaroo
+   Graph 
    Data
-   About
+   Tech Setup
+   Setup
    Template
 
 .. note::
