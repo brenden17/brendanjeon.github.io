@@ -1,5 +1,10 @@
 #!/bin/bash
 
+cd docs/
+make clean
+make html
+cd ..
+
 rm *.html
 rm *.js
 #rm .buildinfo
