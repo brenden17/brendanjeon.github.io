@@ -258,6 +258,11 @@ title="Print to PDF"
    Set up conda
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#change-defualt-docker-image-file-location">
+   Change defualt docker image file location
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -297,6 +302,11 @@ title="Print to PDF"
    Set up conda
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#change-defualt-docker-image-file-location">
+   Change defualt docker image file location
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -316,25 +326,35 @@ title="Print to PDF"
 </section>
 <section id="id1">
 <h2>Tinaroo<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
-<p>The <cite>Tinaroo &lt;https://rcc.uq.edu.au/tinaroo&gt;</cite> cluster is a major increase in capability for UQ.</p>
+<p>The <a class="reference external" href="https://rcc.uq.edu.au/tinaroo">Tinaroo</a> cluster is a major increase in capability for UQ.</p>
 </section>
 <section id="request-new-acconut-to-rcc">
 <h2>Request new acconut to RCC<a class="headerlink" href="#request-new-acconut-to-rcc" title="Permalink to this headline">#</a></h2>
-<p>Go  to RCC to make a new acconut</p>
-<p>&lt;p&gt;Tinaroo does not appear on the QRIScompute request page, go &lt;a href=”<a class="reference external" href="https://services.qriscloud.org.au/services/request/new/151270360cb54d0783bffd482b4651d2">https://services.qriscloud.org.au/services/request/new/151270360cb54d0783bffd482b4651d2</a>”&gt;here&lt;/a&gt;.&lt;/p&gt;</p>
+<p>Tinaroo does not appear on the QRIScompute request page, go <a class="reference external" href="https://services.qriscloud.org.au/services/request/new/151270360cb54d0783bffd482b4651d2">here</a>.</p>
 </section>
 <section id="set-up-conda">
 <h2>Set up conda<a class="headerlink" href="#set-up-conda" title="Permalink to this headline">#</a></h2>
-<p>A cool bit of code:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="ch">#!/bin/bash</span>
-<span class="linenos">2</span><span class="c1"># Some cool Bash code</span>
-<span class="linenos">3</span><span class="nb">echo</span> <span class="si">${</span><span class="nv">BASH_VERSINFO</span><span class="p">[*]</span><span class="si">}</span>
-<span class="linenos">4</span>
-<span class="linenos">5</span>scp -r  local_folder &lt;username&gt;@getafix.smp.uq.edu.au:/data/&lt;username&gt;/&lt;folder&gt;
-</pre></div>
-</div>
-<p><cite>Tinaroo user guide&lt;http://www2.rcc.uq.edu.au/hpc/guides/index.html?secure/Tinaroo_userguide.html&gt;</cite>
-‘Tinaroo user guide&lt;<a class="reference external" href="http://www2.rcc.uq.edu.au/hpc/guides/index.html?secure/Tinaroo_userguide.html">http://www2.rcc.uq.edu.au/hpc/guides/index.html?secure/Tinaroo_userguide.html</a>&gt;’</p>
+<dl>
+<dt>A cool bit of code::</dt><dd><p>conda create -n tools python=3
+source activate tools</p>
+<p>conda install -c bioconda cutesv
+conda install -c bioconda vg
+conda install -c bioconda minigraph
+conda install -c bioconda samtools
+conda install -c bioconda tabix
+conda install -c bioconda snakemake</p>
+</dd>
+</dl>
+<p><a class="reference external" href="http://www2.rcc.uq.edu.au/hpc/guides/index.html?secure/Tinaroo_userguide.html">Tinaroo user guide</a></p>
+</section>
+<section id="change-defualt-docker-image-file-location">
+<h2>Change defualt docker image file location<a class="headerlink" href="#change-defualt-docker-image-file-location" title="Permalink to this headline">#</a></h2>
+<dl class="simple">
+<dt>A cool bit of code::</dt><dd><p>sudo vi /etc/docker/daemon.json
+add “data-root”:”/home/brendan/workspace/docker”
+sudo service docker restart</p>
+</dd>
+</dl>
 </section>
 </section>
 
