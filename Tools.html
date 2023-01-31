@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Template &#8212; Brendan  documentation</title>
+    <title>Tools &#8212; Brendan  documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -34,7 +34,8 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Data" href="Data.html" />
+    <link rel="next" title="Data" href="Data.html" />
+    <link rel="prev" title="Graph" href="Graph.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -97,8 +98,8 @@
    Graph
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Tools.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Tools
   </a>
  </li>
@@ -107,8 +108,8 @@
    Data
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Template.html">
    Template
   </a>
  </li>
@@ -185,7 +186,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/Template.rst.txt"
+        <a href="_sources/Tools.rst.txt"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -222,23 +223,162 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#samtools">
+   Samtools
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assembler">
+     Assembler
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#flye">
+   Flye
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#miniasm">
+   miniasm
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quickmerge">
+     quickmerge
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#triimmer">
+     Triimmer
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#porechop">
+   Porechop
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#graph">
+     Graph
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vg">
+   VG
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#minigraph">
+   minigraph
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Template</h1>
+                <h1>Tools</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#samtools">
+   Samtools
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assembler">
+     Assembler
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#flye">
+   Flye
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#miniasm">
+   miniasm
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quickmerge">
+     quickmerge
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#triimmer">
+     Triimmer
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#porechop">
+   Porechop
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#graph">
+     Graph
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vg">
+   VG
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#minigraph">
+   minigraph
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -246,32 +386,80 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="template">
-<h1>Template<a class="headerlink" href="#template" title="Permalink to this headline">#</a></h1>
-<p><a class="reference external" href="https://lpn-doc-sphinx-primer.readthedocs.io/en/stable/concepts/heading.html">https://lpn-doc-sphinx-primer.readthedocs.io/en/stable/concepts/heading.html</a></p>
-<div class="literal-block-wrapper docutils container" id="id1">
-<div class="code-block-caption"><span class="caption-text">Documentation</span><a class="headerlink" href="#id1" title="Permalink to this code">#</a></div>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">Title- Number Signs</span>
-<span class="gh">#####################</span>
-
-<span class="gh">Suptitle -- Asterisks</span>
-<span class="gh">*********************</span>
-
-<span class="gh">Section -- Equal Signs</span>
-<span class="gh">======================</span>
-
-<span class="gh">Subsection -- Hyphens</span>
-<span class="gh">---------------------</span>
-
-<span class="gh">Subsubsection -- Circumflex</span>
-<span class="gh">^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
-
-<span class="gh">Paragraph -- Double Quotes</span>
-<span class="gh">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span>
-</pre></div>
-</div>
-</div>
-<p>hello.</p>
+  <section id="tools">
+<h1>Tools<a class="headerlink" href="#tools" title="Permalink to this headline">#</a></h1>
+<section id="samtools">
+<h2>Samtools<a class="headerlink" href="#samtools" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://samtools.github.io/hts-specs/SAMv1.pdf">Offical doc</a></p></li>
+<li><p><a class="reference external" href="https://hhj6212.github.io/biology/tech/2020/10/18/samtools.html">Howtouse-ko</a></p></li>
+</ul>
+<section id="assembler">
+<h3>Assembler<a class="headerlink" href="#assembler" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="flye">
+<h2>Flye<a class="headerlink" href="#flye" title="Permalink to this headline">#</a></h2>
+<p>Flye is a de novo assembler.</p>
+<dl class="simple">
+<dt>flye::</dt><dd><p>conda install -c bioconda flye</p>
+</dd>
+</dl>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/fenderglass/Flye">Git</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=nF83anOSYoA">Tutorial-youtube</a></p></li>
+<li><p><a class="reference external" href="https://timkahlke.github.io/LongRead_tutorials/ASS_F.html">Tutorial</a></p></li>
+</ul>
+</section>
+<section id="miniasm">
+<h2>miniasm<a class="headerlink" href="#miniasm" title="Permalink to this headline">#</a></h2>
+<p>Miniasm is a very fast OLC-based de novo assembler for noisy long reads.</p>
+<dl class="simple">
+<dt>miniasm::</dt><dd><p>conda install -c bioconda miniasm</p>
+</dd>
+</dl>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/lh3/miniasm">Git</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=f4sT5pEHoxU">Tutorial</a></p></li>
+</ul>
+<section id="quickmerge">
+<h3>quickmerge<a class="headerlink" href="#quickmerge" title="Permalink to this headline">#</a></h3>
+<p>Quickmerge will even work with hybrid assemblies made by combining long reads and Illumina short reads.</p>
+<dl class="simple">
+<dt>quickmerge::</dt><dd><p>conda install -c conda-forge -c bioconda quickmerge
+# using wrapper
+merge_wrapper.py hybrid_assembly.fasta self_assembly.fasta</p>
+</dd>
+</dl>
+</section>
+<section id="triimmer">
+<h3>Triimmer<a class="headerlink" href="#triimmer" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="porechop">
+<h2>Porechop<a class="headerlink" href="#porechop" title="Permalink to this headline">#</a></h2>
+<p>Porechop is a tool for finding and removing adapters from Oxford Nanopore reads.</p>
+<dl class="simple">
+<dt>Porechop::</dt><dd><p>conda install -c bioconda porechop
+porechop -i input_reads.fastq.gz -o output_reads.fastq.gz</p>
+</dd>
+</dl>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/rrwick/Porechop">Git</a></p></li>
+</ul>
+<section id="graph">
+<h3>Graph<a class="headerlink" href="#graph" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="vg">
+<h2>VG<a class="headerlink" href="#vg" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://cpang.netlify.app/course-documentation">CPANG</a></p></li>
+</ul>
+</section>
+<section id="minigraph">
+<h2>minigraph<a class="headerlink" href="#minigraph" title="Permalink to this headline">#</a></h2>
+</section>
 </section>
 
 
@@ -282,12 +470,19 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Data.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="Graph.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Data</p>
+            <p class="prev-next-title">Graph</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="Data.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Data</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

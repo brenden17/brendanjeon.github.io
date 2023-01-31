@@ -7,8 +7,8 @@ Welcome to Brendan's documentation!
 
    Progress
    Graph 
+   Tools
    Data
-   Tech Setup
    Template
 
 .. note::
