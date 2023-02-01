@@ -9,17 +9,52 @@ The Research Computing Centre (RCC) provides coordinated management and support 
 Specifically for the MME, the RCC coordinates access and support for 3 HPCs and the Research Data Manager (RDM).
 
 Tinaroo
-*******
+********
 
 The `Tinaroo <https://rcc.uq.edu.au/tinaroo>`_ cluster is a major increase in capability for UQ. 
 
-See `Documnet <https://rcc.uq.edu.au/filething/get/19257/BatchPBSPro.pdf?>`_/
+See `Documnet <https://rcc.uq.edu.au/filething/get/19257/BatchPBSPro.pdf?>`_
 
 
 Request a new acconut to RCC
-***************************
+*****************************
 
 Go `here <https://services.qriscloud.org.au/services/request/new/151270360cb54d0783bffd482b4651d2>`_ and fill up the form.
+
+
+Create a new record on Research Data Manager (RDM)
+***************************************************
+
+Go to `RDM Page <https://rdm.uq.edu.au/>`_ and create a new record.
+
+When you want to use data on Tinaroo, check out this option.
+
+.. image:: /images/createnewrecord.png
+   :alt: create a new record
+   :width: 600px
+
+
+
+Set up conda
+*************
+
+.. highlight:: bash
+   :linenothreshold: 1
+
+A cool bit of code::
+
+   conda create -n tools python=3
+   source activate tools
+
+   conda install -c bioconda cutesv
+   conda install -c bioconda vg
+   conda install -c bioconda minigraph
+   conda install -c bioconda samtools
+   conda install -c bioconda tabix
+   conda install -c bioconda snakemake
+
+
+`Tinaroo user guide <http://www2.rcc.uq.edu.au/hpc/guides/index.html?secure/Tinaroo_userguide.html>`_
 
 
 PBSPro
@@ -50,42 +85,6 @@ bash::
                                                                                                               
    source activate tools
    echo $HOSTNAME
-
-
-
-
-
-Set up conda
-*************
-
-.. highlight:: bash
-   :linenothreshold: 1
-
-A cool bit of code::
-
-   conda create -n tools python=3
-   source activate tools
-
-   conda install -c bioconda cutesv
-   conda install -c bioconda vg
-   conda install -c bioconda minigraph
-   conda install -c bioconda samtools
-   conda install -c bioconda tabix
-   conda install -c bioconda snakemake
-
-
-`Tinaroo user guide <http://www2.rcc.uq.edu.au/hpc/guides/index.html?secure/Tinaroo_userguide.html>`_
-
-Create a new record on Research Data Manager (RDM)
-***************************************************
-
-Go to `RDM Page <https://rdm.uq.edu.au/>`_ and create a new record.
-
-When you want to use data on Tinaroo, check out this option.
-
-.. image:: /images/createnewrecord.png
-   :alt: create a new record
-   :width: 400px
 
 
 Change defualt docker image file location
