@@ -1,6 +1,9 @@
 Welcome to Brendan's documentation!
 ===================================
 
+Hello...
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
@@ -8,6 +11,7 @@ Welcome to Brendan's documentation!
    Progress
    Graph 
    Tools
+   RCC
    Data
    Template
 

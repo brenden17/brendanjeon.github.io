@@ -9,14 +9,51 @@ The Research Computing Centre (RCC) provides coordinated management and support 
 Specifically for the MME, the RCC coordinates access and support for 3 HPCs and the Research Data Manager (RDM).
 
 Tinaroo
-***************************
+*******
 
 The `Tinaroo <https://rcc.uq.edu.au/tinaroo>`_ cluster is a major increase in capability for UQ. 
 
-Request new acconut to RCC
+See `Documnet <https://rcc.uq.edu.au/filething/get/19257/BatchPBSPro.pdf?>`_/
+
+
+Request a new acconut to RCC
 ***************************
 
-Tinaroo does not appear on the QRIScompute request page, go `here <https://services.qriscloud.org.au/services/request/new/151270360cb54d0783bffd482b4651d2>`_.
+Go `here <https://services.qriscloud.org.au/services/request/new/151270360cb54d0783bffd482b4651d2>`_ and fill up the form.
+
+
+PBSPro
+******
+
+.. highlight:: bash
+   :linenothreshold: 1
+
+bash::
+
+   qsub helloworld.pbs
+   qstat -aw1n
+   qdel <JOB-ID>
+
+This a sample PBS file.
+
+.. highlight:: bash
+   :linenothreshold: 1
+
+bash::
+
+   #
+   #PBS -l select=1:ncpus=1:mem=1GB                                                                      
+   #PBS -l walltime=01:00:00
+   #PBS -A UQ-QAAFI
+   #PBS -N SimpleDemo
+   #
+                                                                                                              
+   source activate tools
+   echo $HOSTNAME
+
+
+
+
 
 Set up conda
 *************
@@ -25,6 +62,7 @@ Set up conda
    :linenothreshold: 1
 
 A cool bit of code::
+
    conda create -n tools python=3
    source activate tools
 
@@ -38,6 +76,16 @@ A cool bit of code::
 
 `Tinaroo user guide <http://www2.rcc.uq.edu.au/hpc/guides/index.html?secure/Tinaroo_userguide.html>`_
 
+Create a new record on Research Data Manager (RDM)
+***************************************************
+
+Go to `RDM Page <https://rdm.uq.edu.au/>`_ and create a new record.
+
+When you want to use data on Tinaroo, check out this option.
+
+.. image:: /images/createnewrecord.png
+   :alt: create a new record
+   :width: 400px
 
 
 Change defualt docker image file location
@@ -47,6 +95,7 @@ Change defualt docker image file location
    :linenothreshold: 1
 
 A cool bit of code::
+
    sudo vi /etc/docker/daemon.json
    add "data-root":"/home/brendan/workspace/docker"
    sudo service docker restart
