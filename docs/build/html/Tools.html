@@ -33,8 +33,8 @@
     <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tinaroo" href="RCC.html" />
-    <link rel="prev" title="Graph" href="Graph.html" />
+    <link rel="next" title="Data" href="Data.html" />
+    <link rel="prev" title="My work" href="Work.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -88,13 +88,8 @@
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="Progress.html">
-   Progress
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Graph.html">
-   Graph
+  <a class="reference internal" href="Work.html">
+   My work
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -103,13 +98,13 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="RCC.html">
-   Tinaroo
+  <a class="reference internal" href="Data.html">
+   Data
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Data.html">
-   Data
+  <a class="reference internal" href="RCC.html">
+   RCC
   </a>
  </li>
  <li class="toctree-l1">
@@ -277,6 +272,11 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nanofilt">
+     Nanofilt
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#porechop">
      Porechop
     </a>
@@ -301,9 +301,52 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#samtools">
-   Samtools
+  <a class="reference internal nav-link" href="#alignment">
+   Alignment
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#minimap2">
+     minimap2
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#paftools">
+       paftools
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#winnowmap">
+     Winnowmap
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#consensus">
+   Consensus
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#racon">
+     Racon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sam-bam">
+   SAM/BAM
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#samtools">
+     Samtools
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -352,6 +395,11 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nanofilt">
+     Nanofilt
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#porechop">
      Porechop
     </a>
@@ -376,9 +424,52 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#samtools">
-   Samtools
+  <a class="reference internal nav-link" href="#alignment">
+   Alignment
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#minimap2">
+     minimap2
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#paftools">
+       paftools
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#winnowmap">
+     Winnowmap
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#consensus">
+   Consensus
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#racon">
+     Racon
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sam-bam">
+   SAM/BAM
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#samtools">
+     Samtools
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -436,6 +527,17 @@ title="Print to PDF"
 </section>
 <section id="trimmer">
 <h2>Trimmer<a class="headerlink" href="#trimmer" title="Permalink to this headline">#</a></h2>
+<section id="nanofilt">
+<h3>Nanofilt<a class="headerlink" href="#nanofilt" title="Permalink to this headline">#</a></h3>
+<p>Filtering and trimming of long read sequencing data.</p>
+<p>Nanofilt:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>NanoFilt<span class="w"> </span>–l<span class="w"> </span><span class="m">500</span><span class="w"> </span>--headcrop<span class="w"> </span><span class="m">10</span><span class="w"> </span>-q<span class="w"> </span><span class="m">10</span><span class="w"> </span>&lt;<span class="w"> </span>./Q5705/data/<span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_Blockchain_v6.0.1.fastq<span class="w"> </span>&gt;<span class="w"> </span>./Q5705/trimmed/<span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_Blockchain_v6.0.1.trimmed.fastq
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/wdecoster/nanofilt">Source</a></p></li>
+</ul>
+</section>
 <section id="porechop">
 <h3>Porechop<a class="headerlink" href="#porechop" title="Permalink to this headline">#</a></h3>
 <p>Porechop is a tool for finding and removing adapters from Oxford Nanopore reads.</p>
@@ -464,12 +566,48 @@ title="Print to PDF"
 </ul>
 </section>
 </section>
+<section id="alignment">
+<h2>Alignment<a class="headerlink" href="#alignment" title="Permalink to this headline">#</a></h2>
+<section id="minimap2">
+<h3>minimap2<a class="headerlink" href="#minimap2" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="http://blog.genoglobe.com/2018/09/nanopore-sequencing-de-novo-assembly.html">Options [kr]</a></p></li>
+<li><p><a class="reference external" href="https://korbillgates.tistory.com/197">Nanopore sequencing de novo assembly [kr]</a></p></li>
+<li><p><a class="reference external" href="https://timkahlke.github.io/LongRead_tutorials/ASS_M.html">Genome Assembly with Minimap2 and Miniasm</a></p></li>
+<li><p><a class="reference external" href="https://lh3.github.io/minimap2/minimap2.html">Man page</a></p></li>
+</ul>
+<section id="paftools">
+<h4>paftools<a class="headerlink" href="#paftools" title="Permalink to this headline">#</a></h4>
+<p>paftools.js is a script that processes alignments in the PAF format, such as converting between formats, evaluating mapping accuracy, lifting over BED files based on alignment, and calling variants from assembly-to-assembly alignment. This script requires the k8 Javascript shell to run. On Linux or Mac, you can download the precompiled k8 binary with:</p>
+</section>
+</section>
+<section id="winnowmap">
+<h3>Winnowmap<a class="headerlink" href="#winnowmap" title="Permalink to this headline">#</a></h3>
+<p>Winnowmap is a long-read mapping algorithm optimized for mapping ONT and PacBio reads to repetitive reference sequences. Winnowmap development began on top of minimap2 codebase, and since then we have incorporated the following two ideas to improve mapping accuracy within repeats.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/marbl/Winnowmap">Winnowmap</a></p></li>
+</ul>
+</section>
+</section>
+<section id="consensus">
+<h2>Consensus<a class="headerlink" href="#consensus" title="Permalink to this headline">#</a></h2>
+<section id="racon">
+<h3>Racon<a class="headerlink" href="#racon" title="Permalink to this headline">#</a></h3>
+<p>Racon is a standalone consensus building tool that can be coupled with a fast assembler such as miniasm, which performs de novo assembly with error prone long reads without error corrections. This dramatically cut down the time needed for sequence assembly and consensus generation. Racon stands for Rapid Consensus and it can be used for PacBio and Oxford Nanopore data.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/isovic/racon">Source</a></p></li>
+</ul>
+</section>
+</section>
+<section id="sam-bam">
+<h2>SAM/BAM<a class="headerlink" href="#sam-bam" title="Permalink to this headline">#</a></h2>
 <section id="samtools">
-<h2>Samtools<a class="headerlink" href="#samtools" title="Permalink to this headline">#</a></h2>
+<h3>Samtools<a class="headerlink" href="#samtools" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://samtools.github.io/hts-specs/SAMv1.pdf">Offical doc</a></p></li>
 <li><p><a class="reference external" href="https://hhj6212.github.io/biology/tech/2020/10/18/samtools.html">How to use</a></p></li>
 </ul>
+</section>
 </section>
 </section>
 
@@ -481,17 +619,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="Graph.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="Work.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Graph</p>
+            <p class="prev-next-title">My work</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="RCC.html" title="next page">
+    <a class='right-next' id="next-link" href="Data.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Tinaroo</p>
+        <p class="prev-next-title">Data</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

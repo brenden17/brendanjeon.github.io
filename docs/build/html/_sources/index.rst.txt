@@ -1,18 +1,18 @@
 Welcome to Brendan's documentation!
-===================================
+**********************************
 
-Hello...
+Welcome to Brendan's documentation.
 
+Search `genomic and Genetic Terms <https://www.genome.gov/genetics-glossary>`_
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   Progress
-   Graph 
+   Work
    Tools
-   RCC
    Data
+   RCC
    Template
 
 .. note::

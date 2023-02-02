@@ -60,6 +60,20 @@ quickmerge::
 Trimmer
 =========
 
+Nanofilt
+--------
+
+Filtering and trimming of long read sequencing data.
+
+.. highlight:: bash
+   :linenothreshold: 1
+
+Nanofilt::
+
+   NanoFilt –l 500 --headcrop 10 -q 10 < ./Q5705/data/${sample}_Blockchain_v6.0.1.fastq > ./Q5705/trimmed/${sample}_Blockchain_v6.0.1.trimmed.fastq
+
+* `Source <https://github.com/wdecoster/nanofilt>`_
+
 Porechop
 --------
 Porechop is a tool for finding and removing adapters from Oxford Nanopore reads. 
@@ -87,9 +101,50 @@ minigraph
 
 * `Tutorial <https://timkahlke.github.io/LongRead_tutorials/ASS_M.html>`_
 
+Alignment
+==========
+
+minimap2
+--------
+
+* `Options [kr] <http://blog.genoglobe.com/2018/09/nanopore-sequencing-de-novo-assembly.html>`_
+* `Nanopore sequencing de novo assembly [kr] <https://korbillgates.tistory.com/197>`_
+* `Genome Assembly with Minimap2 and Miniasm <https://timkahlke.github.io/LongRead_tutorials/ASS_M.html>`_
+* `Man page <https://lh3.github.io/minimap2/minimap2.html>`_
+
+paftools
+^^^^^^^^
+
+paftools.js is a script that processes alignments in the PAF format, such as converting between formats, evaluating mapping accuracy, lifting over BED files based on alignment, and calling variants from assembly-to-assembly alignment. This script requires the k8 Javascript shell to run. On Linux or Mac, you can download the precompiled k8 binary with:
+
+
+Winnowmap
+---------
+
+Winnowmap is a long-read mapping algorithm optimized for mapping ONT and PacBio reads to repetitive reference sequences. Winnowmap development began on top of minimap2 codebase, and since then we have incorporated the following two ideas to improve mapping accuracy within repeats.
+
+* `Winnowmap <https://github.com/marbl/Winnowmap>`_
+
+Consensus 
+==========
+
+Racon
+------
+
+Racon is a standalone consensus building tool that can be coupled with a fast assembler such as miniasm, which performs de novo assembly with error prone long reads without error corrections. This dramatically cut down the time needed for sequence assembly and consensus generation. Racon stands for Rapid Consensus and it can be used for PacBio and Oxford Nanopore data.
+
+* `Source <https://github.com/isovic/racon>`_
+
+
+SAM/BAM
+=========
 
 Samtools
-=========
+---------
 
 * `Offical doc <https://samtools.github.io/hts-specs/SAMv1.pdf>`_
 * `How to use <https://hhj6212.github.io/biology/tech/2020/10/18/samtools.html>`_
+
+
+
+

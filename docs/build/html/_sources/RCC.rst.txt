@@ -1,29 +1,16 @@
-Tinaroo
-========
+RCC
+***
 
 UQ's Research Computing Centre
-*******************************
+================================
 
 The Research Computing Centre (RCC) provides coordinated management and support of The University of Queensland’s sustained and substantial investment in eResearch. The RCC helps UQ researchers across disciplines make the most of the University’s eResearch technologies, such as High Performance Computing (HPC), data storage, data management, visualisation, workflow and videoconferencing. 
 
 Specifically for the MME, the RCC coordinates access and support for 3 HPCs and the Research Data Manager (RDM).
 
-Tinaroo
-********
-
-The `Tinaroo <https://rcc.uq.edu.au/tinaroo>`_ cluster is a major increase in capability for UQ. 
-
-See `Documnet <https://rcc.uq.edu.au/filething/get/19257/BatchPBSPro.pdf?>`_
-
-
-Request a new acconut to RCC
-*****************************
-
-Go `here <https://services.qriscloud.org.au/services/request/new/151270360cb54d0783bffd482b4651d2>`_ and fill up the form.
-
 
 Create a new record on Research Data Manager (RDM)
-***************************************************
+===================================================
 
 Go to `RDM Page <https://rdm.uq.edu.au/>`_ and create a new record.
 
@@ -35,8 +22,21 @@ When you want to use data on Tinaroo, check out this option.
 
 
 
+Tinaroo
+=======
+
+The `Tinaroo <https://rcc.uq.edu.au/tinaroo>`_ cluster is a major increase in capability for UQ. 
+
+See the `Document <https://rcc.uq.edu.au/filething/get/19257/BatchPBSPro.pdf?>`_.
+
+
+Request a new acconut to RCC
+----------------------------
+
+Go `here <https://services.qriscloud.org.au/services/request/new/151270360cb54d0783bffd482b4651d2>`_ and fill up the form.
+
 Set up conda
-*************
+-------------
 
 .. highlight:: bash
    :linenothreshold: 1
@@ -58,7 +58,12 @@ A cool bit of code::
 
 
 PBSPro
-******
+-------
+
+PBSPro is the batch system used on Awoonga, FlashLite and Tinaroo.
+
+
+`PBSPro user guide <http://www2.rcc.uq.edu.au/hpc/guides/index.html?secure/Batch_PBSPro.html>`_
 
 .. highlight:: bash
    :linenothreshold: 1
@@ -68,27 +73,37 @@ bash::
    qsub helloworld.pbs
    qstat -aw1n
    qdel <JOB-ID>
+   qstat -f <JOB-ID>
 
-This a sample PBS file.
+
+This a sample PBS, helloworld.pbs file.
 
 .. highlight:: bash
    :linenothreshold: 1
 
 bash::
 
+   #!/bin/bash   
    #
    #PBS -l select=1:ncpus=1:mem=1GB                                                                      
    #PBS -l walltime=01:00:00
    #PBS -A UQ-QAAFI
-   #PBS -N SimpleDemo
+   #PBS -N helloworld
    #
                                                                                                               
    source activate tools
    echo $HOSTNAME
 
 
+.. important:: Resource requirements
+
+   Set cpu, mem, walltime carefully
+
+Tips
+====
+
 Change defualt docker image file location
-*****************************************
+-----------------------------------------
 
 .. highlight:: bash
    :linenothreshold: 1
