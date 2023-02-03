@@ -23,9 +23,9 @@ bash::
    --genome-size 1m --out-dir ./flye_output
 
 
-* `Git hub <https://github.com/fenderglass/Flye>`_
-* `Tutorial <https://www.youtube.com/watch?v=nF83anOSYoA>`_
-* `Tutorial <https://timkahlke.github.io/LongRead_tutorials/ASS_F.html>`_
+* `Flye github <https://github.com/fenderglass/Flye>`_
+* `Flye youtube <https://www.youtube.com/watch?v=nF83anOSYoA>`_
+* `Flye tutorial <https://timkahlke.github.io/LongRead_tutorials/ASS_F.html>`_
 
 miniasm
 --------
@@ -39,8 +39,8 @@ miniasm::
 
    conda install -c bioconda miniasm
 
-* `Git hub <https://github.com/lh3/miniasm>`_
-* `Tutorial <https://www.youtube.com/watch?v=f4sT5pEHoxU>`_
+* `miniasm github <https://github.com/lh3/miniasm>`_
+* `miniasm youtube <https://www.youtube.com/watch?v=f4sT5pEHoxU>`_
 
 quickmerge
 ===========
@@ -63,7 +63,7 @@ Trimmer
 Nanofilt
 --------
 
-Filtering and trimming of long read sequencing data.
+Trimming and filtering Oxford Nanopore sequencing reads.
 
 .. highlight:: bash
    :linenothreshold: 1
@@ -72,7 +72,7 @@ Nanofilt::
 
    NanoFilt –l 500 --headcrop 10 -q 10 < ./Q5705/data/${sample}_Blockchain_v6.0.1.fastq > ./Q5705/trimmed/${sample}_Blockchain_v6.0.1.trimmed.fastq
 
-* `Source <https://github.com/wdecoster/nanofilt>`_
+* `Nanofilt github <https://github.com/wdecoster/nanofilt>`_
 
 Porechop
 --------
@@ -86,7 +86,7 @@ Porechop::
    conda install -c bioconda porechop
    porechop -i input_reads.fastq.gz -o output_reads.fastq.gz
 
-* `Git hub <https://github.com/rrwick/Porechop>`_
+* `Porechop github <https://github.com/rrwick/Porechop>`_
 
 Graph
 ======
@@ -94,12 +94,19 @@ Graph
 VG
 -----
 
-* `CPANG <https://cpang.netlify.app/course-documentation>`_
+* `VG CPANG <https://cpang.netlify.app/course-documentation>`_
 
 minigraph
 ----------
 
-* `Tutorial <https://timkahlke.github.io/LongRead_tutorials/ASS_M.html>`_
+* `minigraph tutorial <https://timkahlke.github.io/LongRead_tutorials/ASS_M.html>`_
+
+pggb
+----------
+
+* `pggb github <https://pggb.readthedocs.io/en/latest/rst/quick_start.html>`_
+
+
 
 Alignment
 ==========
@@ -123,7 +130,7 @@ Winnowmap
 
 Winnowmap is a long-read mapping algorithm optimized for mapping ONT and PacBio reads to repetitive reference sequences. Winnowmap development began on top of minimap2 codebase, and since then we have incorporated the following two ideas to improve mapping accuracy within repeats.
 
-* `Winnowmap <https://github.com/marbl/Winnowmap>`_
+* `Winnowmap github <https://github.com/marbl/Winnowmap>`_
 
 Consensus 
 ==========
@@ -133,7 +140,7 @@ Racon
 
 Racon is a standalone consensus building tool that can be coupled with a fast assembler such as miniasm, which performs de novo assembly with error prone long reads without error corrections. This dramatically cut down the time needed for sequence assembly and consensus generation. Racon stands for Rapid Consensus and it can be used for PacBio and Oxford Nanopore data.
 
-* `Source <https://github.com/isovic/racon>`_
+* `Racon github <https://github.com/isovic/racon>`_
 
 
 SAM/BAM
@@ -142,9 +149,5 @@ SAM/BAM
 Samtools
 ---------
 
-* `Offical doc <https://samtools.github.io/hts-specs/SAMv1.pdf>`_
-* `How to use <https://hhj6212.github.io/biology/tech/2020/10/18/samtools.html>`_
-
-
-
-
+* `Samtools offical doc <https://samtools.github.io/hts-specs/SAMv1.pdf>`_
+* `Samtools How to use <https://hhj6212.github.io/biology/tech/2020/10/18/samtools.html>`_

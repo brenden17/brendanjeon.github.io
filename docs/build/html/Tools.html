@@ -298,6 +298,11 @@ title="Print to PDF"
      minigraph
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pggb">
+     pggb
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -421,6 +426,11 @@ title="Print to PDF"
      minigraph
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pggb">
+     pggb
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -497,9 +507,9 @@ title="Print to PDF"
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/fenderglass/Flye">Git hub</a></p></li>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=nF83anOSYoA">Tutorial</a></p></li>
-<li><p><a class="reference external" href="https://timkahlke.github.io/LongRead_tutorials/ASS_F.html">Tutorial</a></p></li>
+<li><p><a class="reference external" href="https://github.com/fenderglass/Flye">Flye github</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=nF83anOSYoA">Flye youtube</a></p></li>
+<li><p><a class="reference external" href="https://timkahlke.github.io/LongRead_tutorials/ASS_F.html">Flye tutorial</a></p></li>
 </ul>
 </section>
 <section id="miniasm">
@@ -510,8 +520,8 @@ title="Print to PDF"
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/lh3/miniasm">Git hub</a></p></li>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=f4sT5pEHoxU">Tutorial</a></p></li>
+<li><p><a class="reference external" href="https://github.com/lh3/miniasm">miniasm github</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=f4sT5pEHoxU">miniasm youtube</a></p></li>
 </ul>
 </section>
 </section>
@@ -529,13 +539,13 @@ title="Print to PDF"
 <h2>Trimmer<a class="headerlink" href="#trimmer" title="Permalink to this headline">#</a></h2>
 <section id="nanofilt">
 <h3>Nanofilt<a class="headerlink" href="#nanofilt" title="Permalink to this headline">#</a></h3>
-<p>Filtering and trimming of long read sequencing data.</p>
+<p>Trimming and filtering Oxford Nanopore sequencing reads.</p>
 <p>Nanofilt:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>NanoFilt<span class="w"> </span>–l<span class="w"> </span><span class="m">500</span><span class="w"> </span>--headcrop<span class="w"> </span><span class="m">10</span><span class="w"> </span>-q<span class="w"> </span><span class="m">10</span><span class="w"> </span>&lt;<span class="w"> </span>./Q5705/data/<span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_Blockchain_v6.0.1.fastq<span class="w"> </span>&gt;<span class="w"> </span>./Q5705/trimmed/<span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_Blockchain_v6.0.1.trimmed.fastq
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/wdecoster/nanofilt">Source</a></p></li>
+<li><p><a class="reference external" href="https://github.com/wdecoster/nanofilt">Nanofilt github</a></p></li>
 </ul>
 </section>
 <section id="porechop">
@@ -547,7 +557,7 @@ title="Print to PDF"
 </pre></div>
 </div>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/rrwick/Porechop">Git hub</a></p></li>
+<li><p><a class="reference external" href="https://github.com/rrwick/Porechop">Porechop github</a></p></li>
 </ul>
 </section>
 </section>
@@ -556,13 +566,19 @@ title="Print to PDF"
 <section id="vg">
 <h3>VG<a class="headerlink" href="#vg" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="https://cpang.netlify.app/course-documentation">CPANG</a></p></li>
+<li><p><a class="reference external" href="https://cpang.netlify.app/course-documentation">VG CPANG</a></p></li>
 </ul>
 </section>
 <section id="minigraph">
 <h3>minigraph<a class="headerlink" href="#minigraph" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="https://timkahlke.github.io/LongRead_tutorials/ASS_M.html">Tutorial</a></p></li>
+<li><p><a class="reference external" href="https://timkahlke.github.io/LongRead_tutorials/ASS_M.html">minigraph tutorial</a></p></li>
+</ul>
+</section>
+<section id="pggb">
+<h3>pggb<a class="headerlink" href="#pggb" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://pggb.readthedocs.io/en/latest/rst/quick_start.html">pggb github</a></p></li>
 </ul>
 </section>
 </section>
@@ -585,7 +601,7 @@ title="Print to PDF"
 <h3>Winnowmap<a class="headerlink" href="#winnowmap" title="Permalink to this headline">#</a></h3>
 <p>Winnowmap is a long-read mapping algorithm optimized for mapping ONT and PacBio reads to repetitive reference sequences. Winnowmap development began on top of minimap2 codebase, and since then we have incorporated the following two ideas to improve mapping accuracy within repeats.</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/marbl/Winnowmap">Winnowmap</a></p></li>
+<li><p><a class="reference external" href="https://github.com/marbl/Winnowmap">Winnowmap github</a></p></li>
 </ul>
 </section>
 </section>
@@ -595,7 +611,7 @@ title="Print to PDF"
 <h3>Racon<a class="headerlink" href="#racon" title="Permalink to this headline">#</a></h3>
 <p>Racon is a standalone consensus building tool that can be coupled with a fast assembler such as miniasm, which performs de novo assembly with error prone long reads without error corrections. This dramatically cut down the time needed for sequence assembly and consensus generation. Racon stands for Rapid Consensus and it can be used for PacBio and Oxford Nanopore data.</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/isovic/racon">Source</a></p></li>
+<li><p><a class="reference external" href="https://github.com/isovic/racon">Racon github</a></p></li>
 </ul>
 </section>
 </section>
@@ -604,8 +620,8 @@ title="Print to PDF"
 <section id="samtools">
 <h3>Samtools<a class="headerlink" href="#samtools" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="https://samtools.github.io/hts-specs/SAMv1.pdf">Offical doc</a></p></li>
-<li><p><a class="reference external" href="https://hhj6212.github.io/biology/tech/2020/10/18/samtools.html">How to use</a></p></li>
+<li><p><a class="reference external" href="https://samtools.github.io/hts-specs/SAMv1.pdf">Samtools offical doc</a></p></li>
+<li><p><a class="reference external" href="https://hhj6212.github.io/biology/tech/2020/10/18/samtools.html">Samtools How to use</a></p></li>
 </ul>
 </section>
 </section>
