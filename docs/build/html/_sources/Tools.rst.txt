@@ -132,6 +132,18 @@ Winnowmap is a long-read mapping algorithm optimized for mapping ONT and PacBio 
 
 * `Winnowmap github <https://github.com/marbl/Winnowmap>`_
 
+
+MUMmer
+------
+
+`Options <https://manpages.debian.org/testing/mummer/dnadiff.1.en.html#OPTIONS>`_
+
+dnadiff
+^^^^^^^
+
+`dnadiff readme <https://github.com/marbl/MUMmer3/blob/master/docs/dnadiff.README>`_
+
+
 Consensus 
 ==========
 

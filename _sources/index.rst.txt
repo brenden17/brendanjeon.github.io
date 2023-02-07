@@ -11,6 +11,7 @@ Search `genomic and Genetic Terms <https://www.genome.gov/genetics-glossary>`_
 
    Work
    Tools
+   PythonBIO
    Data
    RCC
    Template

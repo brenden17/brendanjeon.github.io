@@ -1,0 +1,16 @@
+Bio with Python
+****************
+
+Libraries
+==========
+
+pysam - VCF
+------------
+
+* `pysam readem <https://pysam.readthedocs.io/en/latest/api.html>`_
+
+
+pandas - BED
+--------------
+
+
