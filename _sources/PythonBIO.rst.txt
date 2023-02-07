@@ -4,13 +4,8 @@ Bio with Python
 Libraries
 ==========
 
-pysam - VCF
+pysam - VCF/SAM/BAM
 ------------
 
-* `pysam readem <https://pysam.readthedocs.io/en/latest/api.html>`_
-
-
-pandas - BED
---------------
-
+* `pysam readme <https://pysam.readthedocs.io/en/latest/api.html>`_
 

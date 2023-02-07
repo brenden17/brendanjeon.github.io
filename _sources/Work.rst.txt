@@ -9,10 +9,17 @@ Study
 Assembly
 ^^^^^^^^
 
-
-* `Fundamentals of Genome Assembly <https://www.youtube.com/watch?v=5wvGapmA5zM>`_
+* `Fundamentals of Genome Assembly <https://www.youtube.com/watch?v=5wvGapmA5zM>`_ on youtube
 * `Canadian Bioinforma-cs Workshops <https://drive.google.com/file/d/112CL9PitgRWsAyDasTTtJFJcBtwogLJp/view>`_
 * `Genome Assembly from Roberts Lab <https://faculty.washington.edu/sr320/?p=13602>`_
+
+
+Graph
+^^^^^^^^
+
+* `Building pangenome graphs <https://www.youtube.com/watch?v=PGLg4n1UhKc&t=622s>`_ on youtube
+* `A Primer on Genome Graphs for Diverse Genomic Analyses <https://www.youtube.com/watch?v=VNVA55two68>`_ on youtube
+* `Creating and using genome graphs with GenGraph: Jon Ambler <https://www.youtube.com/watch?v=QS1y2si51qU>`_ on youtube
 
 
 Bash tips
