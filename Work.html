@@ -250,10 +250,15 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#study">
-   Study
+  <a class="reference internal nav-link" href="#work-1">
+   Work #1
   </a>
   <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assembly-graph">
+     Assembly &amp; Graph
+    </a>
+   </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#assembly">
      Assembly
@@ -301,10 +306,15 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#study">
-   Study
+  <a class="reference internal nav-link" href="#work-1">
+   Work #1
   </a>
   <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assembly-graph">
+     Assembly &amp; Graph
+    </a>
+   </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#assembly">
      Assembly
@@ -344,9 +354,120 @@ title="Print to PDF"
                 
   <section id="my-work">
 <h1>My work<a class="headerlink" href="#my-work" title="Permalink to this headline">#</a></h1>
-<p>I am working…</p>
-<section id="study">
-<h2>Study<a class="headerlink" href="#study" title="Permalink to this headline">#</a></h2>
+<section id="work-1">
+<h2>Work #1<a class="headerlink" href="#work-1" title="Permalink to this headline">#</a></h2>
+<section id="assembly-graph">
+<h3>Assembly &amp; Graph<a class="headerlink" href="#assembly-graph" title="Permalink to this headline">#</a></h3>
+<a class="reference internal image-reference" href="images/assemble-process.png"><img alt="Assembly" src="images/assemble-process.png" style="width: 400px;" /></a>
+<p>from <a class="reference external" href="https://drive.google.com/file/d/112CL9PitgRWsAyDasTTtJFJcBtwogLJp/view">Canadian Bioinforma-cs Workshops</a></p>
+<table class="colwidths-given longtable table" id="table">
+<caption><span class="caption-text">ARS-UCD1.2</span><a class="headerlink" href="#table" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Location/ext/script No.</p></th>
+<th class="head"><p>Hiar_09 42G</p></th>
+<th class="head"><p>Muscle_09 42G</p></th>
+<th class="head"><p>Hiar_40 89G</p></th>
+<th class="head"><p>Muscle_40 49G</p></th>
+<th class="head"><p>Hiar_44 42G</p></th>
+<th class="head"><p>Muscle_44 40G</p></th>
+<th class="head"><p>Tool</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>trim/trimmed.fastq/1.</p></td>
+<td><p>O</p></td>
+<td><p>O</p></td>
+<td><p>O</p></td>
+<td><p>X</p></td>
+<td><p>O</p></td>
+<td><p>O</p></td>
+<td><p><a class="reference external" href="Tools.html#Nanofilt">Nanofilt</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>asm/paf/2.</p></td>
+<td><p>O</p></td>
+<td><p>O</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>O</p></td>
+<td><p>O</p></td>
+<td><p><a class="reference external" href="Tools.html#minimap2">minimap2</a></p></td>
+</tr>
+<tr class="row-even"><td><p>asm/gfa/3.</p></td>
+<td><p>O</p></td>
+<td><p>O</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>O</p></td>
+<td><p>O</p></td>
+<td><p><a class="reference external" href="Tools.html#miniasm">miniasm</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>asmfa/fa/4.</p></td>
+<td><p>O</p></td>
+<td><p>O</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>O</p></td>
+<td><p>O</p></td>
+<td><p>awk</p></td>
+</tr>
+<tr class="row-even"><td><p>asmcontig/paf/5.</p></td>
+<td><p>O</p></td>
+<td><p>O</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>O</p></td>
+<td><p>O</p></td>
+<td><p><a class="reference external" href="Tools.html#minimap2">minimap2</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>consfa/fa/6.</p></td>
+<td><p>O</p></td>
+<td><p>O</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p><a class="reference external" href="Tools.html#racon">racon</a></p></td>
+</tr>
+<tr class="row-even"><td><p>diff/-/7.</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>dnadiff</p></td>
+</tr>
+<tr class="row-odd"><td><p>graph/gaf/8.</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p><a class="reference external" href="Tools.html#minigraph">minigraph</a></p></td>
+</tr>
+<tr class="row-even"><td><p>vcf/bed/9.</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p><a class="reference external" href="Tools.html#gfatools">gfatools</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="assembly">
 <h3>Assembly<a class="headerlink" href="#assembly" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
@@ -367,7 +488,7 @@ title="Print to PDF"
 <h3>Bash tips<a class="headerlink" href="#bash-tips" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="http://www.compciv.org/topics/bash/variables-and-substitution/">Bash variables and command substitution</a></p></li>
-<li><p><a class="reference external" href="https://inpa.tistory.com/entry/LINUX-%EC%89%98-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%95%B5%EC%8B%AC-%EB%AC%B8%EB%B2%95-%EC%B4%9D%EC%A0%95%EB%A6%AC?category=890814">Tutrial</a></p></li>
+<li><p><a class="reference external" href="https://inpa.tistory.com/entry/LINUX-%EC%89%98-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%95%B5%EC%8B%AC-%EB%AC%B8%EB%B2%95-%EC%B4%9D%EC%A0%95%EB%A6%AC?category=890814">Tutorial [kr]</a></p></li>
 </ul>
 </section>
 <section id="workshop">
