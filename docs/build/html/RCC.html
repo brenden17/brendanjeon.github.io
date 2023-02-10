@@ -260,38 +260,31 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tinaroo">
-   Tinaroo
+  <a class="reference internal nav-link" href="#bunya">
+   Bunya
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#request-a-new-acconut-to-rcc">
-     Request a new acconut to RCC
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#set-up-conda">
-     Set up conda
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#pbspro">
-     PBSPro
+    <a class="reference internal nav-link" href="#slurm">
+     SLURM
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wiener">
+   Wiener
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tinaroo-old">
+   Tinaroo (OLD)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tips">
    Tips
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#change-defualt-docker-image-file-location">
-     Change defualt docker image file location
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -323,38 +316,31 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tinaroo">
-   Tinaroo
+  <a class="reference internal nav-link" href="#bunya">
+   Bunya
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#request-a-new-acconut-to-rcc">
-     Request a new acconut to RCC
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#set-up-conda">
-     Set up conda
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#pbspro">
-     PBSPro
+    <a class="reference internal nav-link" href="#slurm">
+     SLURM
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wiener">
+   Wiener
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tinaroo-old">
+   Tinaroo (OLD)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tips">
    Tips
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#change-defualt-docker-image-file-location">
-     Change defualt docker image file location
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -379,16 +365,39 @@ title="Print to PDF"
 <p>When you want to use data on Tinaroo, check out this option.</p>
 <a class="reference internal image-reference" href="images/createnewrecord.png"><img alt="create a new record" src="images/createnewrecord.png" style="width: 600px;" /></a>
 </section>
-<section id="tinaroo">
-<h2>Tinaroo<a class="headerlink" href="#tinaroo" title="Permalink to this headline">#</a></h2>
+<section id="bunya">
+<h2>Bunya<a class="headerlink" href="#bunya" title="Permalink to this headline">#</a></h2>
+<p>See <a class="reference external" href="https://github.com/UQ-RCC/hpc-docs/">Bunya user guide</a></p>
+<p>bash:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>ssh<span class="w"> </span>bunya.rcc.uq.edu.au
+<span class="linenos">2</span>module<span class="w"> </span>avail
+<span class="linenos">3</span>module<span class="w"> </span>load<span class="w"> </span>anaconda3
+<span class="linenos">4</span>conda<span class="w"> </span>env<span class="w"> </span>list
+<span class="linenos">5</span><span class="nb">source</span><span class="w"> </span>activate<span class="w"> </span>tools
+</pre></div>
+</div>
+<section id="slurm">
+<h3>SLURM<a class="headerlink" href="#slurm" title="Permalink to this headline">#</a></h3>
+<p>See <a class="reference external" href="https://github.com/UQ-RCC/hpc-docs/blob/main/Bunya-User-Guide.md#slurm-scripts">Slurm user guide</a></p>
+</section>
+</section>
+<section id="wiener">
+<h2>Wiener<a class="headerlink" href="#wiener" title="Permalink to this headline">#</a></h2>
+<p>See <a class="reference external" href="http://www2.rcc.uq.edu.au/hpc/guides/index.html?secure/Wiener_userguide.html">User guide</a> and <a class="reference external" href="https://rcc.uq.edu.au/wiener">here</a></p>
+<p>bash:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>ssh<span class="w"> </span>wiener.hpc.dc.uq.edu.au
+<span class="linenos">2</span>module<span class="w"> </span>avail
+<span class="linenos">3</span>module<span class="w"> </span>load<span class="w"> </span>anaconda3
+<span class="linenos">4</span>conda<span class="w"> </span>env<span class="w"> </span>list
+<span class="linenos">5</span><span class="nb">source</span><span class="w"> </span>activate<span class="w"> </span>tools
+</pre></div>
+</div>
+</section>
+<section id="tinaroo-old">
+<h2>Tinaroo (OLD)<a class="headerlink" href="#tinaroo-old" title="Permalink to this headline">#</a></h2>
 <p>The <a class="reference external" href="https://rcc.uq.edu.au/tinaroo">Tinaroo</a> cluster is a major increase in capability for UQ.</p>
 <p>See the <a class="reference external" href="https://rcc.uq.edu.au/filething/get/19257/BatchPBSPro.pdf?">Document</a>.</p>
-<section id="request-a-new-acconut-to-rcc">
-<h3>Request a new acconut to RCC<a class="headerlink" href="#request-a-new-acconut-to-rcc" title="Permalink to this headline">#</a></h3>
 <p>Go <a class="reference external" href="https://services.qriscloud.org.au/services/request/new/151270360cb54d0783bffd482b4651d2">here</a> and fill up the form.</p>
-</section>
-<section id="set-up-conda">
-<h3>Set up conda<a class="headerlink" href="#set-up-conda" title="Permalink to this headline">#</a></h3>
 <p>A cool bit of code:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>tools<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>
 <span class="linenos">2</span><span class="nb">source</span><span class="w"> </span>activate<span class="w"> </span>tools
@@ -402,9 +411,6 @@ title="Print to PDF"
 </pre></div>
 </div>
 <p><a class="reference external" href="http://www2.rcc.uq.edu.au/hpc/guides/index.html?secure/Tinaroo_userguide.html">Tinaroo user guide</a></p>
-</section>
-<section id="pbspro">
-<h3>PBSPro<a class="headerlink" href="#pbspro" title="Permalink to this headline">#</a></h3>
 <p>PBSPro is the batch system used on Awoonga, FlashLite and Tinaroo.</p>
 <p><a class="reference external" href="http://www2.rcc.uq.edu.au/hpc/guides/index.html?secure/Batch_PBSPro.html">PBSPro user guide</a></p>
 <p>bash:</p>
@@ -434,18 +440,14 @@ title="Print to PDF"
 <p>Set cpu, mem, walltime carefully</p>
 </div>
 </section>
-</section>
 <section id="tips">
 <h2>Tips<a class="headerlink" href="#tips" title="Permalink to this headline">#</a></h2>
-<section id="change-defualt-docker-image-file-location">
-<h3>Change defualt docker image file location<a class="headerlink" href="#change-defualt-docker-image-file-location" title="Permalink to this headline">#</a></h3>
 <p>A cool bit of code:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>sudo<span class="w"> </span>vi<span class="w"> </span>/etc/docker/daemon.json
 <span class="linenos">2</span>add<span class="w"> </span><span class="s2">&quot;data-root&quot;</span>:<span class="s2">&quot;/home/brendan/workspace/docker&quot;</span>
 <span class="linenos">3</span>sudo<span class="w"> </span>service<span class="w"> </span>docker<span class="w"> </span>restart
 </pre></div>
 </div>
-</section>
 </section>
 </section>
 

@@ -75,8 +75,8 @@ from `Canadian Bioinforma-cs Workshops <https://drive.google.com/file/d/112CL9Pi
      - O
      - X
      - X
-     - X
-     - X
+     - O
+     - O
      - `racon <Tools.html#racon>`_
    * - diff/-/7.
      - X
@@ -87,20 +87,20 @@ from `Canadian Bioinforma-cs Workshops <https://drive.google.com/file/d/112CL9Pi
      - X 
      - dnadiff
    * - graph/gaf/8.
+     - O
+     - O
      - X
      - X
-     - X
-     - X
-     - X
-     - X
+     - O
+     - O
      - `minigraph <Tools.html#minigraph>`_
    * - vcf/bed/9.
+     - O
+     - O
      - X
      - X
-     - X
-     - X
-     - X
-     - X
+     - O
+     - O
      - `gfatools <Tools.html#gfatools>`_
 
 Assembly
@@ -117,6 +117,7 @@ Graph
 * `Building pangenome graphs <https://www.youtube.com/watch?v=PGLg4n1UhKc&t=622s>`_ on youtube
 * `A Primer on Genome Graphs for Diverse Genomic Analyses <https://www.youtube.com/watch?v=VNVA55two68>`_ on youtube
 * `Creating and using genome graphs with GenGraph: Jon Ambler <https://www.youtube.com/watch?v=QS1y2si51qU>`_ on youtube
+* `Bandage <https://rrwick.github.io/Bandage/>`_
 
 
 Bash tips

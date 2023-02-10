@@ -20,10 +20,12 @@ Data
      - 1,000,000,000 bp
    
 
-
-
 Bos taurus (cattle)
 ====================
+
+Paper:
+
+* `In it for the long run: perspectives on exploiting long-read sequencing in livestock for population scale studies of structural variants <https://gsejournal.biomedcentral.com/articles/10.1186/s12711-023-00783-5>`_
 
 ARS-UCD1.2
 ------------

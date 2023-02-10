@@ -21,9 +21,50 @@ When you want to use data on Tinaroo, check out this option.
    :width: 600px
 
 
+Bunya
+======
 
-Tinaroo
-=======
+See `Bunya user guide <https://github.com/UQ-RCC/hpc-docs/>`_
+
+
+.. highlight:: bash
+   :linenothreshold: 1
+
+bash::
+
+   ssh bunya.rcc.uq.edu.au
+   module avail
+   module load anaconda3
+   conda env list
+   source activate tools
+
+SLURM
+^^^^^^
+
+See `Slurm user guide <https://github.com/UQ-RCC/hpc-docs/blob/main/Bunya-User-Guide.md#slurm-scripts>`_
+
+
+Wiener
+======
+
+See `User guide <http://www2.rcc.uq.edu.au/hpc/guides/index.html?secure/Wiener_userguide.html>`_ and `here <https://rcc.uq.edu.au/wiener>`_
+
+
+.. highlight:: bash
+   :linenothreshold: 1
+
+bash::
+
+   ssh wiener.hpc.dc.uq.edu.au
+   module avail
+   module load anaconda3
+   conda env list
+   source activate tools
+
+
+
+Tinaroo (OLD)
+=============
 
 The `Tinaroo <https://rcc.uq.edu.au/tinaroo>`_ cluster is a major increase in capability for UQ. 
 
