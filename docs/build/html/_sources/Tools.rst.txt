@@ -1,6 +1,9 @@
 Tools
 ######
 
+`FastQ Quality Scores <https://learn.gencore.bio.nyu.edu/ngs-file-formats/quality-scores/>`_
+
+
 Assembler
 ==========
 
