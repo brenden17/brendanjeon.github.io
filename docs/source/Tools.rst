@@ -1,7 +1,6 @@
 Tools
 ######
 
-
 Assembler
 ==========
 
@@ -153,6 +152,16 @@ Racon
 Racon is a standalone consensus building tool that can be coupled with a fast assembler such as miniasm, which performs de novo assembly with error prone long reads without error corrections. This dramatically cut down the time needed for sequence assembly and consensus generation. Racon stands for Rapid Consensus and it can be used for PacBio and Oxford Nanopore data.
 
 * `Racon github <https://github.com/isovic/racon>`_
+
+
+Graph
+======
+
+Bandage
+-------
+
+`How to Use Assembly Graphs with Metagenomic Datasets <https://tylerbarnum.com/2018/02/26/how-to-use-assembly-graphs-with-metagenomic-datasets/>`_
+
 
 
 SAM/BAM
