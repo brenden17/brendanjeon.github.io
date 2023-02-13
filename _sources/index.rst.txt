@@ -10,6 +10,7 @@ Search `genomic and Genetic Terms <https://www.genome.gov/genetics-glossary>`_
    :caption: Contents:
 
    Work
+   Graph
    Tools
    PythonBIO
    Data
