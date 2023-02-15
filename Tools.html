@@ -387,6 +387,18 @@ title="Print to PDF"
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sv-caller">
+   SV Caller
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cutesv">
+     CuteSV
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
     </nav>
@@ -539,6 +551,18 @@ title="Print to PDF"
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sv-caller">
+   SV Caller
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cutesv">
+     CuteSV
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
                         </nav>
@@ -625,7 +649,8 @@ title="Print to PDF"
 <section id="vg">
 <h3>VG<a class="headerlink" href="#vg" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="https://cpang.netlify.app/course-documentation">VG CPANG</a></p></li>
+<li><p><a class="reference external" href="https://cpang.netlify.app/course-documentation">VG CPANG 2018</a></p></li>
+<li><p><a class="reference external" href="https://cpang.netlify.app/">VG CPANG 20192020</a></p></li>
 </ul>
 </section>
 <section id="minigraph">
@@ -697,6 +722,40 @@ title="Print to PDF"
 <li><p><a class="reference external" href="https://samtools.github.io/hts-specs/SAMv1.pdf">Samtools offical doc</a></p></li>
 <li><p><a class="reference external" href="https://hhj6212.github.io/biology/tech/2020/10/18/samtools.html">Samtools How to use</a></p></li>
 </ul>
+<p>bash:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>samtools<span class="w"> </span>view<span class="w"> </span>-S<span class="w"> </span>–b<span class="w"> </span><span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_trimmed.sam<span class="w"> </span>&gt;<span class="w"> </span><span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_trimmed.bam
+<span class="linenos">2</span>samtools<span class="w"> </span>sort<span class="w"> </span>–o<span class="w"> </span><span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_trimmed.sorted.bam<span class="w"> </span><span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_trimmed.bam
+<span class="linenos">3</span>samtools<span class="w"> </span>index<span class="w"> </span><span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_trimmed.sorted.bam
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="c1"># get the total number of reads of a BAM file (may include unmapped and duplicated multi-aligned reads)</span>
+<span class="linenos">6</span>samtools<span class="w"> </span>view<span class="w"> </span>-c<span class="w"> </span>SAMPLE.bam
+<span class="linenos">7</span>
+<span class="linenos">8</span><span class="c1"># counting only mapped (primary aligned) reads</span>
+<span class="linenos">9</span>samtools<span class="w"> </span>view<span class="w"> </span>-c<span class="w"> </span>-F<span class="w"> </span><span class="m">260</span><span class="w"> </span>SAMPLE.bam
+</pre></div>
+</div>
+</section>
+</section>
+<section id="sv-caller">
+<h2>SV Caller<a class="headerlink" href="#sv-caller" title="Permalink to this headline">#</a></h2>
+<section id="cutesv">
+<h3>CuteSV<a class="headerlink" href="#cutesv" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/tjiangHIT/cuteSV">cuteSV github</a></p></li>
+</ul>
+<p>Option
+.. highlight:: none</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<blockquote>
+<div><p>&gt; For ONT data:
+–max_cluster_bias_INS     100
+–diff_ratio_merging_INS   0.3
+–max_cluster_bias_DEL  100
+–diff_ratio_merging_DEL   0.3</p>
+</div></blockquote>
 </section>
 </section>
 </section>

@@ -96,7 +96,8 @@ Graph
 VG
 -----
 
-* `VG CPANG <https://cpang.netlify.app/course-documentation>`_
+* `VG CPANG 2018 <https://cpang.netlify.app/course-documentation>`_
+* `VG CPANG 20192020 <https://cpang.netlify.app/>`_
 
 minigraph
 ----------
@@ -175,3 +176,41 @@ Samtools
 
 * `Samtools offical doc <https://samtools.github.io/hts-specs/SAMv1.pdf>`_
 * `Samtools How to use <https://hhj6212.github.io/biology/tech/2020/10/18/samtools.html>`_
+
+
+.. highlight:: bash
+   :linenothreshold: 1
+
+bash::
+
+   samtools view -S –b ${sample}_trimmed.sam > ${sample}_trimmed.bam
+   samtools sort –o ${sample}_trimmed.sorted.bam ${sample}_trimmed.bam
+   samtools index ${sample}_trimmed.sorted.bam
+
+   # get the total number of reads of a BAM file (may include unmapped and duplicated multi-aligned reads)
+   samtools view -c SAMPLE.bam
+
+   # counting only mapped (primary aligned) reads
+   samtools view -c -F 260 SAMPLE.bam
+
+
+
+SV Caller
+=========
+
+CuteSV
+---------
+
+* `cuteSV github <https://github.com/tjiangHIT/cuteSV>`_
+
+Option 
+.. highlight:: none
+
+.. code-block:: rst
+""""""
+
+   > For ONT data:
+   --max_cluster_bias_INS     100
+   --diff_ratio_merging_INS   0.3
+   --max_cluster_bias_DEL  100
+   --diff_ratio_merging_DEL   0.3
