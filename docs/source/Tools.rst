@@ -207,7 +207,6 @@ Option
 .. highlight:: none
 
 .. code-block:: rst
-""""""
 
    > For ONT data:
    --max_cluster_bias_INS     100
