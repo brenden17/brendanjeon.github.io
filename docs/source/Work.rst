@@ -131,6 +131,7 @@ Workshop
 
 * `UC Davis Bioinformatics Core December 2018 Genome Assembly workshop <http://www.compciv.org/topics/bash/variables-and-substitution/>`_
 * `Informatics on High-Throughput Sequencing Data <https://bioinformaticsdotca.github.io/htseq_2017>`_
+* `Evomics 2022 – Structural variant tutorial <https://evomics.org/learning/population-and-speciation-genomics/2022-population-and-speciation-genomics/detecting-structural-variants-lab/>`_
 
 
 Gits
