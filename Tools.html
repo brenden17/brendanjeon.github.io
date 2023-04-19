@@ -583,10 +583,10 @@ title="Print to PDF"
 <h3>Flye<a class="headerlink" href="#flye" title="Permalink to this headline">#</a></h3>
 <p>Flye is a de novo assembler.</p>
 <p>bash:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>bioconda<span class="w"> </span>flye
-<span class="linenos">2</span>flye<span class="w"> </span>--nano-raw<span class="w"> </span><span class="se">\</span>
-<span class="linenos">3</span>~/course_data/precompiled/all_guppy.fastq<span class="w"> </span><span class="se">\</span>
-<span class="linenos">4</span>--genome-size<span class="w"> </span>1m<span class="w"> </span>--out-dir<span class="w"> </span>./flye_output
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>conda install -c bioconda flye
+<span class="linenos">2</span>flye --nano-raw <span class="se">\</span>
+<span class="linenos">3</span>~/course_data/precompiled/all_guppy.fastq <span class="se">\</span>
+<span class="linenos">4</span>--genome-size 1m --out-dir ./flye_output
 </pre></div>
 </div>
 <ul class="simple">
@@ -599,7 +599,7 @@ title="Print to PDF"
 <h3>miniasm<a class="headerlink" href="#miniasm" title="Permalink to this headline">#</a></h3>
 <p>Miniasm is a very fast OLC-based de novo assembler for noisy long reads.</p>
 <p>miniasm:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>bioconda<span class="w"> </span>miniasm
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>conda install -c bioconda miniasm
 </pre></div>
 </div>
 <ul class="simple">
@@ -612,9 +612,9 @@ title="Print to PDF"
 <h2>quickmerge<a class="headerlink" href="#quickmerge" title="Permalink to this headline">#</a></h2>
 <p>Quickmerge will even work with hybrid assemblies made by combining long reads and Illumina short reads.</p>
 <p>quickmerge:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>-c<span class="w"> </span>bioconda<span class="w"> </span>quickmerge
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>conda install -c conda-forge -c bioconda quickmerge
 <span class="linenos">2</span><span class="c1"># using wrapper</span>
-<span class="linenos">3</span>merge_wrapper.py<span class="w"> </span>hybrid_assembly.fasta<span class="w"> </span>self_assembly.fasta
+<span class="linenos">3</span>merge_wrapper.py hybrid_assembly.fasta self_assembly.fasta
 </pre></div>
 </div>
 </section>
@@ -624,7 +624,7 @@ title="Print to PDF"
 <h3>Nanofilt<a class="headerlink" href="#nanofilt" title="Permalink to this headline">#</a></h3>
 <p>Trimming and filtering Oxford Nanopore sequencing reads.</p>
 <p>Nanofilt:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>NanoFilt<span class="w"> </span>–l<span class="w"> </span><span class="m">500</span><span class="w"> </span>--headcrop<span class="w"> </span><span class="m">10</span><span class="w"> </span>-q<span class="w"> </span><span class="m">10</span><span class="w"> </span>&lt;<span class="w"> </span>./Q5705/data/<span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_Blockchain_v6.0.1.fastq<span class="w"> </span>&gt;<span class="w"> </span>./Q5705/trimmed/<span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_Blockchain_v6.0.1.trimmed.fastq
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>NanoFilt –l <span class="m">500</span> --headcrop <span class="m">10</span> -q <span class="m">10</span> &lt; ./Q5705/data/<span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_Blockchain_v6.0.1.fastq &gt; ./Q5705/trimmed/<span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_Blockchain_v6.0.1.trimmed.fastq
 </pre></div>
 </div>
 <ul class="simple">
@@ -635,8 +635,8 @@ title="Print to PDF"
 <h3>Porechop<a class="headerlink" href="#porechop" title="Permalink to this headline">#</a></h3>
 <p>Porechop is a tool for finding and removing adapters from Oxford Nanopore reads.</p>
 <p>Porechop:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>bioconda<span class="w"> </span>porechop
-<span class="linenos">2</span>porechop<span class="w"> </span>-i<span class="w"> </span>input_reads.fastq.gz<span class="w"> </span>-o<span class="w"> </span>output_reads.fastq.gz
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>conda install -c bioconda porechop
+<span class="linenos">2</span>porechop -i input_reads.fastq.gz -o output_reads.fastq.gz
 </pre></div>
 </div>
 <ul class="simple">
@@ -723,15 +723,15 @@ title="Print to PDF"
 <li><p><a class="reference external" href="https://hhj6212.github.io/biology/tech/2020/10/18/samtools.html">Samtools How to use</a></p></li>
 </ul>
 <p>bash:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>samtools<span class="w"> </span>view<span class="w"> </span>-S<span class="w"> </span>–b<span class="w"> </span><span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_trimmed.sam<span class="w"> </span>&gt;<span class="w"> </span><span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_trimmed.bam
-<span class="linenos">2</span>samtools<span class="w"> </span>sort<span class="w"> </span>–o<span class="w"> </span><span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_trimmed.sorted.bam<span class="w"> </span><span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_trimmed.bam
-<span class="linenos">3</span>samtools<span class="w"> </span>index<span class="w"> </span><span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_trimmed.sorted.bam
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>samtools view -S –b <span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_trimmed.sam &gt; <span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_trimmed.bam
+<span class="linenos">2</span>samtools sort –o <span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_trimmed.sorted.bam <span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_trimmed.bam
+<span class="linenos">3</span>samtools index <span class="si">${</span><span class="nv">sample</span><span class="si">}</span>_trimmed.sorted.bam
 <span class="linenos">4</span>
 <span class="linenos">5</span><span class="c1"># get the total number of reads of a BAM file (may include unmapped and duplicated multi-aligned reads)</span>
-<span class="linenos">6</span>samtools<span class="w"> </span>view<span class="w"> </span>-c<span class="w"> </span>SAMPLE.bam
+<span class="linenos">6</span>samtools view -c SAMPLE.bam
 <span class="linenos">7</span>
 <span class="linenos">8</span><span class="c1"># counting only mapped (primary aligned) reads</span>
-<span class="linenos">9</span>samtools<span class="w"> </span>view<span class="w"> </span>-c<span class="w"> </span>-F<span class="w"> </span><span class="m">260</span><span class="w"> </span>SAMPLE.bam
+<span class="linenos">9</span>samtools view -c -F <span class="m">260</span> SAMPLE.bam
 </pre></div>
 </div>
 </section>
