@@ -1,6 +1,12 @@
 RCC
 ***
 
+My RDD
+=======
+
+* Q5705
+
+
 UQ's Research Computing Centre
 ================================
 
@@ -42,6 +48,17 @@ SLURM
 ^^^^^^
 
 See `Slurm user guide <https://github.com/UQ-RCC/hpc-docs/blob/main/Bunya-User-Guide.md#slurm-scripts>`_
+
+.. highlight:: bash
+   :linenothreshold: 1
+
+bash::
+
+   srun --pty /bin/bash #interactive
+   sbatch 
+   scancel
+   squeue
+   sinfo
 
 
 Wiener
