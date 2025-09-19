@@ -1,7 +1,7 @@
 ### Docs
 
 ~~~
-C:\Users\uqbjeon\Downloads\download\DEV\phd
+cd Downloads\download\DEV\phd
 python3.8 -m venv venv
 
 .\venv\Scripts\activate
